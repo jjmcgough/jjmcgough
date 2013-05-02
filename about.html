@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<!-- saved from url=(0054)http://twitter.github.com/bootstrap/examples/hero.html -->
+<!-- saved from url=(0054) http://twitter.github.io/bootstrap/examples/hero.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>About | EdgeOne Medical</title>
+    <title>About Us |
+
+EdgeOne Medical</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 60px;
         padding-bottom: 40px;
       }
     </style>
-    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -26,24 +28,35 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">                                   <link rel="shortcut icon" href="http://twitter.github.com/bootstrap/assets/ico/favicon.png">
+                    <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="http://twitter.github.com/bootstrap/assets/ico/favicon.png">
   </head>
 
   <body>
 
-     <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <div class="container" style="width: auto;">
+          <a href="index.html" class="brand"><img alt="" src="img/edgeone_logo_60px.jpg" /></a>
+          <button type="button" class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="index.html">EdgeOne Medical</a>
+          <a class="brand" href="index.html"></a>
           <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
+            <ul class="nav" role="navigation">
+              <li class><a href="index.html"><i class="icon-home icon-black"></i> Home</a></li>
+              <li class="active dropdown open">
+                      <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://google.com">Overview</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#anotherAction">Careers</a></li>
+                        <!-- <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Quality</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Combination</a></li> -->
+                      </ul>
+                    </li>
               <li><a href="services.html">Services</a></li>
               <li><a href="capabilities.html">Capabilities</a></li>
               <li><a href="contact_us.html">Contact Us</a></li>
@@ -58,7 +71,6 @@
       </div>
     </div>
 
-
     <div class="container">
 
       <!-- Main hero unit for a primary marketing message or call to action -->
@@ -67,7 +79,18 @@
 
       </div>
 
-      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span2">
+          <div data-spy="affix" data-offset-top="200">
+            <ul class="nav">
+              <!-- <li class="active"><a href="index.html">Overview</a></li> -->
+              <li><a href="about.html">The Company</a></li>
+              <li><a href="careers.html">Careers</a></li>
+
+              <!-- <li><a href="quality_regulatory_representative.html">Quality & Regulatory Representative</a></li> -->
+              </li>
+          </div>
+        </div><!-- Example row of columns -->
       <!-- <div class="row">
         <div class="span3">
           <div data-spy="affix" data-offset-top="200">
@@ -83,48 +106,41 @@
           </div>
         </div> -->
 
-        <div class="span8">
-          <img src="img/about_us_1.jpg"/>
-          <h3>About Us</h2>
-          <p>EdgeOne Medical is a trusted partner of global medical device firms dedicated to the development and life cycle management of your medical device portfolio through testing and characterization, and compreshensive quality and regulatory services.  Depending on whether you are looking to launch a new device or resolve issues with an existing product line, our goal is to help you achieve your goals as expeditiously as possible with the most cost-effective solution.  </p>
-          <p>EdgeOne Medical was founded in 2012 by a team of experienced medical device developers who recognized a gap in the availability of service providers having hands on expertise with the development and management of medical devices from concept through the end of a product's life.  We fully understand and appreciate the subtle, yet important differences between launching a device and maintaining medical devices already on the market.
-          </p>
-          <p>Regardless of the size of your project, we provide each and every client with the same level of attention to detail and strive for pro-active customer communication throughout the project engagement.
-          </p>
+        <div class="span6">
+          <img src="img/about_us_3.jpg"/>
+          <h3>The Company</h3>
+          <p>EdgeOne Medical, a trusted partner of medical device firms, is focused on providing product realization services for the development and life cycle management of devices through comprehensive product performance testing, quality and regulatory services.</p>
+          <p>EdgeOne Medical was founded in 2012 by a team of experienced medical device development professionals with a successful track record of leading, launching and maintaining a diverse portfolio of medical devices in the global marketplace. They recognized a market need for a premier testing service organization capable of conducting a wide range of testing (from the simple to the complex) while also having the ability to correlate the testing needs to the appropriate context of the product life cycle.</p>
+          <p>Since product performance testing on a medical device is often driven by a quality and/or regulatory requirement, it was only natural to incorporate quality and regulatory services into EdgeOne's portfolio.   </p>
+          <p>This unique combination of an experienced medical device management team and a complementary array of testing, quality and regulatory services means we are ideally suited to support all types of firms and a diverse array of medical device projects/products.<br>
+          <p>By having been in your shoes, we can help you achieve your medical device realization goals!</p> 
           <!-- <p><a class="btn" href="http://twitter.github.com/bootstrap/examples/hero.html#">View details »</a></p> -->
         </div>
 
         <div class="span3">
-          <img src="img/30-Minute-Consultation.png"/>
+          <a href="consultation.html"><img src="img/30-Minute-Consultation.png"/>
 
-          <p><a class="btn" href="http://twitter.github.com/bootstrap/examples/hero.html#">Learn More »</a></p>
+          <p><a class="btn" href="consultation.html">Learn More »</a></p>
         </div>
       </div>
 
       <hr>
 
       <footer>
-        <p>© EdgeOne Medical Inc. 2013</p>
+        <p>© EdgeOne Medical Inc. 2013   |    <a href="terms_of_service.html" class="brand">Terms of Use   |  <a href="privacy_policy.html" class="brand">Privacy Policy  |  <a href="sitemap.html" class="brand">Site Map   |  <a href="skype.com" class="brand">p: 312.300.6640 </p>
       </footer>
+
 
     </div> <!-- /container -->
 
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./Bootstrap, from Twitter_files/jquery.js"></script>
-    <script src="./Bootstrap, from Twitter_files/bootstrap-transition.js"></script>
-    <script src="./Bootstrap, from Twitter_files/bootstrap-alert.js"></script>
-    <script src="./Bootstrap, from Twitter_files/bootstrap-modal.js"></script>
-    <script src="./Bootstrap, from Twitter_files/bootstrap-dropdown.js"></script>
-    <script src="./Bootstrap, from Twitter_files/bootstrap-scrollspy.js"></script>
-    <script src="./Bootstrap, from Twitter_files/bootstrap-tab.js"></script>
-    <script src="./Bootstrap, from Twitter_files/bootstrap-tooltip.js"></script>
-    <script src="./Bootstrap, from Twitter_files/bootstrap-popover.js"></script>
-    <script src="./Bootstrap, from Twitter_files/bootstrap-button.js"></script>
-    <script src="./Bootstrap, from Twitter_files/bootstrap-collapse.js"></script>
-    <script src="./Bootstrap, from Twitter_files/bootstrap-carousel.js"></script>
-    <script src="./Bootstrap, from Twitter_files/bootstrap-typeahead.js"></script>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
 
 
 
